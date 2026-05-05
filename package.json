@@ -1,6 +1,7 @@
 {
   "name": "starfolio",
   "type": "module",
+  "packageManager": "pnpm@10.33.2",
   "description": "Starfolio - Create a personal or professional portfolio site just from a single config file. Built with Astro.",
   "author": "websiterating",
   "version": "0.0.1",
