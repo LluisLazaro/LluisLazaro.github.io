@@ -3,9 +3,9 @@ export const CONFIG = {
   // Site Settings
   // ---------------------------------------------------------------------------
   site: {
-    url: "https://lluisLazaro.github.io",
+    url: "https://lluislazaro.github.io",
     locale: "en_US",
-    twitterHandle: "@alexmercer_dev",
+    twitterHandle: "",
   },
 
   // ---------------------------------------------------------------------------
