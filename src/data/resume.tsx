@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { FolderKanban, House } from "lucide-react";
+import { FolderKanban, House, Mail } from "lucide-react";
 import { Csharp } from "@/components/ui/svgs/csharp";
 
 export const DATA = {
@@ -48,7 +48,7 @@ export const DATA = {
       enabled: true,
       label: "Contact",
       heading: "Get in touch",
-      text: "Open to game programming opportunities, internships, collaborations, and project conversations.",
+      text: "",
     },
   },
   photos: [],
@@ -89,6 +89,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: House, label: "Home" },
     { href: "/#projects", icon: FolderKanban, label: "Projects" },
+    { href: "/#contact", icon: Mail, label: "Contact" },
   ],
   contact: {
     email: "lluislazaro77@gmail.com",

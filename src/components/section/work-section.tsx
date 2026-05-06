@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 
 function LogoImage({ src, alt }: { src: string; alt: string }) {
   const [imageError, setImageError] = useState(false);
+  const isManuelaLogo = src.includes("manuela_logo");
 
   if (!src || imageError) {
     return (
@@ -23,7 +24,10 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
     <img
       src={src}
       alt={alt}
-      className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
+      className={cn(
+        "size-8 md:size-10 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none",
+        isManuelaLogo ? "p-0.5" : "p-1"
+      )}
       onError={() => setImageError(true)}
     />
   );

@@ -3,7 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Markdown from "react-markdown";
 
 function ProjectImage({ src, alt }: { src: string; alt: string }) {
@@ -50,12 +50,30 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const playPreview = () => {
+    const videoElement = videoRef.current;
+    if (!videoElement) return;
+    void videoElement.play();
+  };
+
+  const pausePreview = () => {
+    const videoElement = videoRef.current;
+    if (!videoElement) return;
+    videoElement.pause();
+    videoElement.currentTime = 0;
+  };
+
   return (
     <div
       className={cn(
         "flex flex-col h-full border border-border rounded-xl overflow-hidden hover:ring-2 cursor-pointer hover:ring-muted transition-all duration-200",
         className
       )}
+      onMouseEnter={playPreview}
+      onMouseLeave={pausePreview}
+      onTouchStart={playPreview}
     >
       <div className="relative shrink-0">
         <a
@@ -66,11 +84,13 @@ export function ProjectCard({
         >
           {video ? (
             <video
+              ref={videoRef}
               src={video}
-              autoPlay
               loop
               muted
               playsInline
+              preload="metadata"
+              poster={image}
               className="w-full h-48 object-cover"
             />
           ) : image ? (

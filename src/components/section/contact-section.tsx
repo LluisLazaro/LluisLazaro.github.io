@@ -38,9 +38,11 @@ export default function ContactSection() {
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
           {DATA.sections.contact.heading}
         </h2>
-        <p className="mx-auto max-w-lg text-muted-foreground text-balance">
-          {DATA.sections.contact.text}
-        </p>
+        {DATA.sections.contact.text && (
+          <p className="mx-auto max-w-lg text-muted-foreground text-balance">
+            {DATA.sections.contact.text}
+          </p>
+        )}
         <div className="flex flex-col sm:flex-row items-center gap-2">
           <a
             href={`mailto:${DATA.contact.email}`}
