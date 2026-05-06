@@ -51,6 +51,8 @@ export function ProjectCard({
   className,
 }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const videoObjectPosition =
+    title === "Orbital Hopper" ? "object-[58%_center]" : "object-center";
 
   const playPreview = () => {
     const videoElement = videoRef.current;
@@ -92,7 +94,7 @@ export function ProjectCard({
               playsInline
               preload="metadata"
               poster={image}
-              className="w-full h-48 object-cover"
+              className={cn("w-full h-48 object-cover", videoObjectPosition)}
             />
           ) : image ? (
             <ProjectImage src={image} alt={title} />

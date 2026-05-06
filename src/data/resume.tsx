@@ -9,10 +9,10 @@ export const DATA = {
   location: "Vilafranca del Penedès, Spain",
   locationLink: "https://www.google.com/maps/place/Vilafranca+del+Penedes",
   description:
-    "Programmer and game developer focused on gameplay, UI, and tools for interactive game experiences.",
+    "Programmer, Game Designer, and game developer focused on gameplay, UI, and tools for interactive game experiences.",
   summary:
     "I am a passionate and adaptable programmer currently entering my third year of a Bachelor's degree in Video Game Design and Development at ENTI - Universitat de Barcelona. My work focuses on gameplay programming, UI implementation, and custom tools that make game production smoother. I enjoy collaborating in teams, learning fast, and building polished interactive systems with clear feedback, stable performance, and efficient workflows.",
-  avatarUrl: "/picofme.png",
+  avatarUrl: "/photos/1764540073504.jfif",
   ogImage: "/og_image.png",
   sections: {
     about: { order: 1, enabled: true, heading: "About" },
@@ -29,7 +29,7 @@ export const DATA = {
       enabled: true,
       label: "Projects",
       heading: "Featured game projects",
-      text: "Two current game projects that represent my strongest work in gameplay programming, UI systems, tools, and team-based production.",
+      text: "Two current game projects that represent my strongest work across gameplay programming, game design, UI systems, tools, and team-based production.",
     },
     hackathons: {
       order: 7,
