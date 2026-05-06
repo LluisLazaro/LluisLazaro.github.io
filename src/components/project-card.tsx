@@ -74,6 +74,7 @@ export function ProjectCard({
       onMouseEnter={playPreview}
       onMouseLeave={pausePreview}
       onTouchStart={playPreview}
+      onTouchEnd={pausePreview}
     >
       <div className="relative shrink-0">
         <a

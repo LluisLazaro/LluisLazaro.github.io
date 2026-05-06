@@ -103,7 +103,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/feed/",
+        url: "https://www.linkedin.com/in/lluís-làzaro-colomé-b4a757306",
         icon: Icons.linkedin,
         navbar: true,
       },
@@ -128,7 +128,7 @@ export const DATA = {
       badges: [],
       location: "Sant Salvador, Spain",
       title: "Officer & Waiter",
-      logoUrl: "/manuela_logo.svg",
+      logoUrl: "/photos/manuela_logo.jpg",
       start: "2023",
       end: undefined,
       description:
@@ -172,7 +172,7 @@ export const DATA = {
   projects: [
     {
       title: "Junkonaut",
-      href: "https://lluislazaro77.itch.io",
+      href: "https://polplasher.itch.io/junkonaut",
       dates: "July 2025 - Present",
       active: true,
       description:
@@ -189,16 +189,21 @@ export const DATA = {
       links: [
         {
           type: "Itch.io",
-          href: "https://lluislazaro77.itch.io",
+          href: "https://polplasher.itch.io/junkonaut",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "YouTube",
+          href: "https://www.youtube.com/watch?v=t4dAop3KH8A",
+          icon: <Icons.youtube className="size-3" />,
         },
       ],
       image: "",
-      video: "",
+      video: "/videos/Junkonaut_Video.mp4",
     },
     {
       title: "Orbital Hopper",
-      href: "https://lluislazaro77.itch.io",
+      href: "https://penguinstudiosgames.itch.io/orbital-hopper",
       dates: "September 2024 - June 2026",
       active: true,
       description:
@@ -216,12 +221,12 @@ export const DATA = {
       links: [
         {
           type: "Itch.io",
-          href: "https://lluislazaro77.itch.io",
+          href: "https://penguinstudiosgames.itch.io/orbital-hopper",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
-      video: "",
+      video: "/videos/Orbital_video.mp4",
     },
   ],
   hackathons: [],
