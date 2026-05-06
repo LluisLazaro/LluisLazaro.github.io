@@ -176,7 +176,7 @@ export const DATA = {
       dates: "July 2025 - Present",
       active: true,
       description:
-        "**Role:** Gameplay Programmer / Gameplay Designer. Implemented comprehensive UI systems across the main menu and core gameplay loops. Collaborated in a cross-functional team using Agile methodologies, Jira, and GitFlow.",
+        "**Role:** Gameplay Programmer / Gameplay Designer. Built the full main menu and implemented UI systems across core gameplay loops. Collaborated in a cross-functional team using Agile methodologies, Jira, and GitFlow.",
       technologies: [
         "Unreal Engine",
         "Gameplay Programming",
@@ -226,7 +226,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/videos/Orbital_video.mp4",
+      video: "/videos/Orbital_video.mp4?v=2",
     },
   ],
   hackathons: [],
