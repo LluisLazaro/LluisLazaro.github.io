@@ -1,8 +1,6 @@
 import { Icons } from "@/components/icons";
 import { FolderKanban, House } from "lucide-react";
 import { Csharp } from "@/components/ui/svgs/csharp";
-import { Java } from "@/components/ui/svgs/java";
-import { Python } from "@/components/ui/svgs/python";
 
 export const DATA = {
   name: "Lluís Lázaro Colomé",
@@ -31,7 +29,7 @@ export const DATA = {
       enabled: true,
       label: "Projects",
       heading: "Featured game projects",
-      text: "Two current game projects that represent my strongest work in gameplay programming, UI systems, tools, optimization, and team-based production.",
+      text: "Two current game projects that represent my strongest work in gameplay programming, UI systems, tools, and team-based production.",
     },
     hackathons: {
       order: 7,
@@ -50,7 +48,7 @@ export const DATA = {
       enabled: true,
       label: "Contact",
       heading: "Get in touch",
-      text: "Open to game programming opportunities, internships, collaborations, and project conversations. The fastest way to reach me is by email or LinkedIn.",
+      text: "Open to game programming opportunities, internships, collaborations, and project conversations.",
     },
   },
   photos: [],
@@ -58,26 +56,35 @@ export const DATA = {
     { name: "C++", icon: undefined },
     { name: "C#", icon: Csharp },
     { name: "C", icon: undefined },
-    { name: "Python", icon: Python },
-    { name: "Java", icon: Java },
+    { name: "Python", icon: undefined },
+    { name: "Java", icon: undefined },
     { name: "Processing", icon: undefined },
     { name: "Arduino", icon: undefined },
+    { name: "OOP", icon: undefined },
+    { name: "FSM", icon: undefined },
+    { name: "Design Patterns", icon: undefined },
+    { name: "Git", icon: undefined },
+    { name: "GitFlow", icon: undefined },
+    { name: "GitHub", icon: undefined },
+    { name: "Bitbucket", icon: undefined },
+    { name: "Agile/Scrum", icon: undefined },
+    { name: "Debugging", icon: undefined },
+    { name: "Code Optimization", icon: undefined },
+    { name: "SOLID", icon: undefined },
     { name: "Unity", icon: undefined },
     { name: "Unreal Engine", icon: undefined },
     { name: "SDL", icon: undefined },
     { name: "SFML", icon: undefined },
-    { name: "Object-Oriented Programming", icon: undefined },
-    { name: "State Machines", icon: undefined },
-    { name: "Design Patterns", icon: undefined },
-    { name: "Git", icon: undefined },
-    { name: "GitFlow", icon: undefined },
-    { name: "Jira", icon: undefined },
-    { name: "Debugging", icon: undefined },
-    { name: "Code Optimization", icon: undefined },
-    { name: "SOLID", icon: undefined },
+    { name: "Visual Studio", icon: undefined },
+    { name: "Maya", icon: undefined },
+    { name: "3ds Max", icon: undefined },
+    { name: "Arduino IDE", icon: undefined },
     { name: "Gameplay Programming", icon: undefined },
     { name: "UI Implementation", icon: undefined },
     { name: "Tool Development", icon: undefined },
+    { name: "Problem Solving", icon: undefined },
+    { name: "Teamwork", icon: undefined },
+    { name: "Cross-functional Collaboration", icon: undefined },
   ],
   navbar: [
     { href: "/", icon: House, label: "Home" },
@@ -95,7 +102,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/",
+        url: "https://www.linkedin.com/feed/",
         icon: Icons.linkedin,
         navbar: true,
       },
@@ -120,7 +127,7 @@ export const DATA = {
       badges: [],
       location: "Sant Salvador, Spain",
       title: "Officer & Waiter",
-      logoUrl: "",
+      logoUrl: "/manuela_logo.svg",
       start: "2023",
       end: undefined,
       description:
@@ -138,7 +145,7 @@ export const DATA = {
     },
     {
       school: "Institut Alt Penedès",
-      href: "#education",
+      href: "",
       degree: "Technological Baccalaureate",
       logoUrl: "",
       start: "September 2021",
@@ -146,7 +153,7 @@ export const DATA = {
     },
     {
       school: "RESET Academia de Informática",
-      href: "#education",
+      href: "",
       degree: "Pseudocode Certification",
       logoUrl: "",
       start: "2020",
@@ -163,6 +170,32 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Junkonaut",
+      href: "https://lluislazaro77.itch.io",
+      dates: "July 2025 - Present",
+      active: true,
+      description:
+        "**Role:** Gameplay Programmer / Gameplay Designer. Implemented comprehensive UI systems across the main menu and core gameplay loops. Collaborated in a cross-functional team using Agile methodologies, Jira, and GitFlow.",
+      technologies: [
+        "Unreal Engine",
+        "Gameplay Programming",
+        "Gameplay Design",
+        "UI Systems",
+        "Agile",
+        "Jira",
+        "GitFlow",
+      ],
+      links: [
+        {
+          type: "Itch.io",
+          href: "https://lluislazaro77.itch.io",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
       title: "Orbital Hopper",
       href: "https://lluislazaro77.itch.io",
       dates: "September 2024 - June 2026",
@@ -178,32 +211,6 @@ export const DATA = {
         "VFX",
         "Post-Processing",
         "Tile-Based Tools",
-      ],
-      links: [
-        {
-          type: "Itch.io",
-          href: "https://lluislazaro77.itch.io",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Junkonaut",
-      href: "https://lluislazaro77.itch.io",
-      dates: "July 2025 - Present",
-      active: true,
-      description:
-        "**Role:** Programmer / Gameplay Designer. Implemented comprehensive UI systems across the main menu and core gameplay loops. Collaborated in a cross-functional team using Agile methodologies, Jira, and GitFlow, and optimized core scripts to help maintain stable framerates and overall performance.",
-      technologies: [
-        "Unreal Engine",
-        "Gameplay Design",
-        "UI Systems",
-        "Agile",
-        "Jira",
-        "GitFlow",
-        "Optimization",
       ],
       links: [
         {

@@ -47,14 +47,10 @@ const sectionComponents: Record<string, React.ReactNode> = {
           <h2 className="text-xl font-bold">{DATA.sections.education.heading}</h2>
         </BlurFade>
         <div className="flex flex-col gap-8">
-          {DATA.education.map((education, index) => (
-            <BlurFade key={education.school} delay={BLUR_FADE_DELAY * 8 + index * 0.05}>
-              <a
-                href={education.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-x-3 justify-between group"
-              >
+          {DATA.education.map((education, index) => {
+            const isLinked = Boolean(education.href);
+            const content = (
+              <>
                 <div className="flex items-center gap-x-3 flex-1 min-w-0">
                   {education.logoUrl ? (
                     <img
@@ -68,7 +64,9 @@ const sectionComponents: Record<string, React.ReactNode> = {
                   <div className="flex-1 min-w-0 flex flex-col gap-0.5">
                     <div className="font-semibold leading-none flex items-center gap-2">
                       {education.school}
-                      <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" aria-hidden />
+                      {isLinked && (
+                        <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" aria-hidden />
+                      )}
                     </div>
                     <div className="font-sans text-sm text-muted-foreground">{education.degree}</div>
                   </div>
@@ -76,9 +74,28 @@ const sectionComponents: Record<string, React.ReactNode> = {
                 <div className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground text-right flex-none">
                   <span>{education.start} - {education.end}</span>
                 </div>
-              </a>
-            </BlurFade>
-          ))}
+              </>
+            );
+
+            return (
+              <BlurFade key={education.school} delay={BLUR_FADE_DELAY * 8 + index * 0.05}>
+                {isLinked ? (
+                  <a
+                    href={education.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-x-3 justify-between group"
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  <div className="flex items-center gap-x-3 justify-between">
+                    {content}
+                  </div>
+                )}
+              </BlurFade>
+            );
+          })}
         </div>
       </div>
     </section>
